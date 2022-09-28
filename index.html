@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Radial Menu Bar</title>
+      <!-- font owesome cdn -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <ul class="menu">
+        <div class="toggle" style="--i:8;--clr:#1d29d1;">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <li style="--i:0;--clr:#ff2972;"><a href=""><i class="fa-solid fa-house-user"></i></a></li>
+        <li style="--i:1;--clr:#fee800;"><a href=""><i class="fa-solid fa-user"></i></a></li>
+        <li style="--i:2;--clr:#04fc43;"><a href=""><i class="fa-solid fa-gear"></i></a></li>
+        <li style="--i:3;--clr:#fe00f1;"><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+        <li style="--i:4;--clr:#00b0fe;"><a href=""><i class="fa-solid fa-video"></i></a></li>
+        <li style="--i:5;--clr:#fea600;"><a href=""><i class="fa-solid fa-gamepad"></i></a></li>
+        <li style="--i:6;--clr:#a529ff;"><a href=""><i class="fa-solid fa-key"></i></a></li>
+        <li style="--i:7;--clr:#01bdab;"><a href=""><i class="fa-solid fa-camera"></i></a></li> 
+    </ul>
+
+    <div class="navigation">
+        <span style="--i:0;--x:-1;--y:0;"><a href=""><i class="fa-solid fa-house-user k"></i></a></span>
+        <span style="--i:1;--x:1;--y:0;"><a href=""><i class="fa-solid fa-user k"></i></a></span>
+        <span style="--i:2;--x:0;--y:-1;"><a href=""><i class="fa-solid fa-gear k"></i></a></span>
+        <span style="--i:3;--x:0;--y:1;"><a href=""><i class="fa-solid fa-envelope k"></i></a></span>
+        <span style="--i:4;--x:1;--y:1;"><a href=""><i class="fa-solid fa-video k"></i></a></span>
+        <span style="--i:5;--x:-1;--y:-1;"><a href=""><i class="fa-solid fa-gamepad k"></i></a></span>
+        <span style="--i:6;--x:0;--y:0;"><a href=""><i class="fa-solid fa-key k"></i></a></span>
+        <span style="--i:7;--x:-1;--y:1;"><a href=""><i class="fa-solid fa-camera k"></i></a></span>
+        <span style="--i:8;--x:1;--y:-1;"><a href=""><i class="fa-solid fa-moon k"></i></a></span>
+    </div>
+<!-- =========================== javaScript =====================================-->
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function(){
+            menu.classList.toggle('active')
+        }
+// navigation function/////////////////////////////////////////////
+let navigation = document.querySelector('.navigation');
+navigation.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
